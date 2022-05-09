@@ -1,0 +1,40 @@
+1. 사원 테이블에서 모든 정보를 조회하는 sql문
+select * from emp;
+
+2.
+select sgrade, sal
+from salary;
+
+3.
+select *
+from emp
+order by empno desc;
+
+4.
+select *
+from dept
+where dloc = 'BOSTON';
+
+5. 
+select *
+from emp
+where dno = 20;
+
+6.
+select *
+from emp
+where dno = 30 and job = 'MANAGER';
+
+7.
+select empno || '-' || ename || '-' || dno
+from emp;
+
+8.
+select a.empno, a.job, a.sgrade, b.sal
+from emp a, salary b
+where a.sgrade = b.sgrade;
+
+9.
+select a.empno, a.ename, a.job, c.dno, c.dloc
+from emp a, dept c
+where a.dno = c.dno;
